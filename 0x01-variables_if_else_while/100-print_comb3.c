@@ -9,22 +9,13 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 48; n <= 57; n++)
+	for (n = 0; n < 10; n++)
 	{
-		for (m = 48; m <= 57; m++)
+		for (m = n + 1; m < 10; m++)
 		{
-			putchar(n);
-			putchar(m);
-		}	int f;
-	int s;
-
-	for (f = 0; f < 10; f++)
-	{
-		for (s = f + 1; s < 10; s++)
-		{
-			putchar(48 + f);
-			putchar(48 + s);
-			if (f == 8 && s == 9)
+			putchar(48 + n);
+			putchar(48 + m);
+			if (n == 8 && m == 9)
 			{}
 			else
 			{
@@ -34,6 +25,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	}
 	return (0);
 }
