@@ -5,10 +5,14 @@
  * Return: 0 always
  */
 int _strlen(char *s)
-{
-	int a = 0; /* start of the counter from 0 */
+ {
+ 	int size;
 
-	for (; *s++;)
-		s++;
-	return (a);
-}
+ 	size = 0;
+ 	while (s[size])
+ 	{
+ 		size++;
+ 	}
+
+ 	return (size);
+ }
