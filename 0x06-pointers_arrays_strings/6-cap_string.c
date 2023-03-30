@@ -10,6 +10,7 @@ char *cap_string(char *c)
 {
 	int i = 0, j = 0, k;
 	int cap[]  = {32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+
 	while (c[i])
 	{
 		for (k = 0; k < 11; k++)
