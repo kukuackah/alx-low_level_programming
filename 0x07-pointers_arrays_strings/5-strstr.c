@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strstr - Entry point
  * @needle: String
@@ -35,8 +35,4 @@ char *_strstr(char *haystack, char *needle)
 		i++;
 	}
 	return (c);
-}
-
-
-
 }
