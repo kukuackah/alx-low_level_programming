@@ -1,24 +1,14 @@
 #include "main.h"
 /**
  * factorial - Return factorial
- * @int: integer number
+ * @n: integer number
  * Return: integer
  */
-int factorial(int)
+int factorial(int n)
 {
-	if (n > 0)
-	{
-		if (n >= 1)
-		{
-		return (n * factorial(n - 1));
-		}
-		else
-		{
-			return (1);
-		}
-	}
-	else
-	{
+	if (n < 0)
 		return (-1);
-	}
+	if (n <= 1)
+		return (1);
+	return (n * factorial(n - 1));
 }
